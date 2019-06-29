@@ -7,7 +7,7 @@
 
 		<title>Volunteers Serving the Need</title>
 
-		<link type="text/css" rel="stylesheet" href="styles.css" />
+		<link type="text/css" rel="stylesheet" href="css/main.css" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -17,29 +17,43 @@
 			<script src="js/html5shiv-printshiv.min.js"></script>
 		<![endif]-->
 
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 	</head>
 
 	<body>
-		<header>
-			<img src="img/american-flag.jpg" alt="American flag background" title="American flag" id="flag">
-			<img src="img/logo.png" alt="VSTN Logo" title="VSTN">
-			<p>Volunteers Serving the Need</p>
-			<p>Helping veterans and their surviving spouse.</p>
 
-			<div class="headericons">
-				<figure class="iconflex">
-					<img src="img/location_white.png" alt="location icon" title="Location">
-					<figcaption>120 Salinas Ave Laredo, TX 78040</figcaption>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+
+		<header>
+			<div class="flexheader">
+				<!--<figure>
+					<img src="img/american-flag.jpg" alt="American flag background" title="American flag" id="flag">
+				</figure>-->
+				<figure>
+					<img src="img/logo.png" alt="VSTN Logo" title="VSTN" class="icon">
 				</figure>
-				<figure class="iconflex">
-					<img src="img/phone_white.png" alt="phone icon" title="Phone number">
-					<figcaption>956-757-2960</figcaption>
-				</figure>
-				<figure class="iconflex">
-					<img src="img/facebook_white.png" alt="Facebook icon" title="Facebook">
-					<figcaption>Find us on Facebook!</figcaption>
-				</figure>
-			</div> <!--close headericons-->
+				<div class="headertype">
+					<p id="headertitle">Volunteers Serving the Need</p>
+					<p id="headersubtitle">Helping veterans and their surviving spouse.</p>
+				</div>
+
+				<div class="headericons">
+					<figure class="iconflex">
+						<img src="img/location_white.png" alt="location icon" title="Location">
+						<figcaption>120 Salinas Ave Laredo, TX 78040</figcaption>
+					</figure>
+					<figure class="iconflex">
+						<img src="img/phone_white.png" alt="phone icon" title="Phone number">
+						<figcaption>956-757-2960</figcaption>
+					</figure>
+					<figure class="iconflex">
+						<img src="img/facebook_white.png" alt="Facebook icon" title="Facebook">
+						<figcaption>Find us on Facebook!</figcaption>
+					</figure>
+				</div> <!--close headericons-->
+			</div> <!--closeflexheader-->
 
 			<nav class="desktopnav">
 				<ul>
@@ -145,6 +159,7 @@
 		</footer>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/hamburger.js"> </script>
 		<script src="js/backstretch.js"> </script>
 		<script src="js/splash.js"> </script>
 

@@ -1,0 +1,125 @@
+/*-----------------------------------
+...............HEADER.................
+----------------------------------- */
+header .flexheader {
+  background-color: #000654;
+  color: #fefdf7;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header .flexheader .icon {
+  width: 100%;
+  min-width: 100px;
+}
+header .flexheader .headericons figure img {
+  width: 100%;
+  max-width: 20px;
+}
+header .flexheader #headertitle {
+  font-size: 2rem;
+}
+header .flexheader #headersubtitle {
+  font-size: 1rem;
+}
+header .flexheader .headericons {
+  display: none;
+}
+header .desktopnav {
+  display: none;
+}
+/*****this is controlling hamburger menu *****/
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 45px;
+  padding: 5px 15px 0px 15px;
+  color: #ffffff;
+  border: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.cross {
+  background: none;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  padding: 7px 15px 0px 15px;
+  color: #ffffff;
+  border: 0;
+  font-size: 3em;
+  line-height: 75px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+}
+.menu {
+  z-index: 1000000;
+  font-weight: bold;
+  font-size: 0.8em;
+  width: 100%;
+  background: #000654;
+  position: absolute;
+  text-align: center;
+  font-size: 12px;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+.menu li {
+  display: block;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu li:hover {
+  display: block;
+  background: #d42729;
+  padding: 15px 0 15px 0;
+  border-bottom: #dddddd 1px solid;
+}
+.menu ul li a {
+  text-decoration: none;
+  margin: 0px;
+  color: #ffffff;
+}
+.menu ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.menu a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*hamburger menu ends */
+@media (min-width: 990px) {
+  .headericons {
+    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+  }
+  .iconflex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  figcaption {
+    padding-left: 8px;
+    font-size: .8125rem;
+  }
+}
