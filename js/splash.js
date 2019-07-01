@@ -1,1 +1,1 @@
-$("#stretchimage").backstretch("images/america-freedom-man.jpg");
+$("#stretchimage").backstretch("img/america-freedom-man.jpg");

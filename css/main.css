@@ -1,3 +1,41 @@
+.bluebuttons {
+  background-color: #000654;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+}
+.redbuttons {
+  background-color: #d42729;
+  width: 80%;
+  padding: 10px 0;
+  margin: 2% 0;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: 3px solid #fefdf7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
 /*-----------------------------------
 ...............HEADER.................
 ----------------------------------- */
@@ -9,17 +47,20 @@ header .flexheader {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 2%;
 }
-header .flexheader .icon {
+header .flexheader .headertype figure img {
+  display: block;
+  margin: auto;
   width: 100%;
-  min-width: 100px;
+  max-width: 125px;
 }
-header .flexheader .headericons figure img {
-  width: 100%;
-  max-width: 20px;
+header .flexheader .headertype p {
+  text-align: center;
 }
 header .flexheader #headertitle {
   font-size: 2rem;
+  padding: 3% 2%;
 }
 header .flexheader #headersubtitle {
   font-size: 1rem;
@@ -106,20 +147,109 @@ header .desktopnav {
   color: #ffffff;
 }
 /*hamburger menu ends */
+/*-----------------------------------
+...............BODY.................
+----------------------------------- */
+body {
+  overflow-x: hidden;
+}
+h1,
+h2 {
+  font-family: 'Roboto Slab', serif;
+  padding: 2%;
+  text-align: center;
+}
+h1 {
+  font-size: 1.75rem;
+}
+h2 {
+  font-size: 1.25rem;
+}
+#stretchimage {
+  display: block;
+  height: 100%;
+  min-height: 300px;
+}
+section {
+  padding-bottom: 2%;
+}
+.offwhite {
+  background-color: #fefdf7;
+}
+.offwhite article figure img {
+  border: 15px solid #d42729;
+}
+.offwhite article .buttonblue {
+  background-color: #000654;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  display: block;
+  margin: 2% auto;
+}
+.blue {
+  background-color: #000654;
+  color: #fefdf7;
+}
+.blue .flexredbuttons {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.blue .buttonred {
+  background-color: #d42729;
+  width: 80%;
+  padding: 10px 0;
+  margin: 2% 0;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: 3px solid #fefdf7;
+}
+main p,
+main figcaption {
+  font-family: 'Nunito', sans-serif;
+}
+main p {
+  padding: 1% 2%;
+  font-size: 1rem;
+}
+main figure img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 2% auto;
+}
+/*-----------------------------------
+...............FOOTER.................
+----------------------------------- */
+footer {
+  padding: 2% 0;
+}
+footer .iconsfooter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+footer .iconsfooter figure {
+  padding: 8px 0;
+}
+footer .iconsfooter figure img {
+  width: 100%;
+  max-width: 25px;
+}
+.footerlogo {
+  display: none;
+}
 @media (min-width: 990px) {
   .headericons {
-    display: block;
     display: flex;
     flex-flow: column nowrap;
-    align-items: baseline;
-  }
-  .iconflex {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-  }
-  figcaption {
-    padding-left: 8px;
-    font-size: .8125rem;
   }
 }

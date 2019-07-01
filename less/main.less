@@ -1,4 +1,15 @@
 @import "variables";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
 /*-----------------------------------
 ...............HEADER.................
 ----------------------------------- */
@@ -12,20 +23,23 @@ header {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
-    .icon {
-      width: 100%;
-      min-width: 100px;
-    }
-    .headericons {
+    padding-bottom: 2%;
+    .headertype {
       figure {
-        img{
-          width: 100%;
-          max-width: 20px;
+        img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 125px;
         }
+      }
+      p {
+        text-align: center;
       }
     }
     #headertitle {
       font-size: 2rem;
+      padding: 3% 2%;
     }
     #headersubtitle {
       font-size: 1rem;
@@ -82,27 +96,118 @@ header {
 
 /*hamburger menu ends */
 
+/*-----------------------------------
+...............BODY.................
+----------------------------------- */
 
 
+body {
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: @font-headers;
+  padding: 2%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+#stretchimage {
+  display: block;
+  height: 100%;
+  min-height: 300px;
+}
+
+section {
+  padding-bottom: 2%;
+}
+
+.offwhite {
+  background-color: @color-offwhite;
+  article {
+    figure{
+      img {
+        border: 15px solid @color-red;
+      }
+    }
+    .buttonblue {
+      .bluebuttons ();
+      display: block;
+      margin: 2% auto;
+    }
+  }
+}
+
+.blue {
+  background-color: @color-blue;
+  color: @color-offwhite;
+  .flexredbuttons {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonred {
+    .redbuttons ();
+  }
+}
+
+main {
+  p, figcaption {
+    font-family: @font-body;
+  }
+  p {
+    padding: 1% 2%;
+    font-size: 1rem;
+  }
+  figure {
+    img {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 2% auto;
+    }
+  }
+}
 
 
+/*-----------------------------------
+...............FOOTER.................
+----------------------------------- */
+
+footer {
+  padding: 2% 0;
+  .iconsfooter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  figure {
+    padding: 8px 0;
+    img {
+      width: 100%;
+      max-width: 25px;
+    }
+  }
+}
+}
+
+.footerlogo {
+  display: none;
+}
 
 
 
 @media (min-width: 990px) {
-  .headericons {
-    display: block;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: baseline;
-}
-  .iconflex {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-    }
-  figcaption {
-      padding-left: 8px;
-      font-size: .8125rem;
+        .headericons {
+          display: flex;
+          flex-flow: column nowrap;
     }
 }
