@@ -49,13 +49,13 @@ header .flexheader {
   align-items: center;
   padding-bottom: 2%;
 }
-header .flexheader .headertype figure img {
+header .flexheader .icon img {
   display: block;
   margin: auto;
   width: 100%;
   max-width: 125px;
 }
-header .flexheader .headertype p {
+header .flexheader p {
   text-align: center;
 }
 header .flexheader #headertitle {
@@ -160,7 +160,7 @@ h2 {
   text-align: center;
 }
 h1 {
-  font-size: 1.75rem;
+  font-size: 3rem;
 }
 h2 {
   font-size: 1.25rem;
@@ -248,8 +248,92 @@ footer .iconsfooter figure img {
   display: none;
 }
 @media (min-width: 990px) {
-  .headericons {
+  header .desktopnav {
+    display: inline;
+  }
+  header .desktopnav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000654;
+    border-bottom: 3px solid #d42729;
+  }
+  header .desktopnav ul li {
+    list-style-type: none;
+    padding: 1% 5% 2% 5%;
+  }
+  header .desktopnav ul li a:link,
+  header .desktopnav ul li a:visited {
+    color: #fefdf7;
+    font-family: 'Nunito', sans-serif;
+    font-size: .75rem;
+  }
+  header .desktopnav ul li a:hover {
+    text-decoration: underline;
+    color: #d42729;
+    font-weight: 600;
+  }
+  header .desktopnav ul li:nth-child(2) {
+    text-align: center;
+    padding-right: 70px;
+  }
+  header .desktopnav ul li:nth-child(3) {
+    text-align: center;
+  }
+  header .flexheader {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .flexheader .icon img {
+    padding: 10px;
+  }
+  header .flexheader .headertext {
+    flex-grow: 2;
+  }
+  header .flexheader .headertext #headertitle,
+  header .flexheader .headertext #headersubtitle {
+    text-align: center;
+  }
+  header .flexheader .headertext #headersubtitle {
+    font-style: italic;
+  }
+  header .flexheader .headericons {
     display: flex;
     flex-flow: column nowrap;
+    padding: 10px;
+  }
+  header .flexheader .headericons figure {
+    flex-grow: 1;
+  }
+  header .flexheader .headericons figure img {
+    width: 100%;
+    max-width: 15px;
+  }
+  header .flexheader .headericons .iconflex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 5px 0 5px 5px;
+  }
+  header .flexheader .headericons .iconflex figcaption {
+    font-size: .65rem;
+    padding-left: 5px;
+  }
+  .menu,
+  .hamburger,
+  .cross {
+    display: none;
+  }
+  .offwhite {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .offwhite article {
+    flex-grow: 1;
   }
 }
