@@ -178,8 +178,12 @@ section {
 }
 .offwhite article figure img {
   border: 15px solid #d42729;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: auto;
 }
-.offwhite article .buttonblue {
+.offwhite .buttonblue {
   background-color: #000654;
   padding: 15px;
   margin-bottom: 20px;
@@ -189,11 +193,21 @@ section {
   border: none;
   font-weight: bold;
   display: block;
-  margin: 2% auto;
+  margin: 4% auto;
 }
 .blue {
   background-color: #000654;
   color: #fefdf7;
+}
+.blue article figure {
+  padding-left: 4%;
+}
+.blue article figure img {
+  border: 15px solid #fefdf7;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 4% auto;
 }
 .blue .flexredbuttons {
   display: flex;
@@ -218,12 +232,6 @@ main figcaption {
 main p {
   padding: 1% 2%;
   font-size: 1rem;
-}
-main figure img {
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 2% auto;
 }
 /*-----------------------------------
 ...............FOOTER.................
@@ -331,9 +339,20 @@ footer .iconsfooter figure img {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .offwhite article {
-    flex-grow: 1;
+    width: 50%;
+  }
+  .offwhite article figure img {
+    width: 70%;
+  }
+  .blue {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+  .blue article {
+    width: 50%;
   }
 }
