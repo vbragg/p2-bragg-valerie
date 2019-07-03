@@ -260,6 +260,31 @@ footer .iconsfooter .iconflexfooter {
 .footerlogo {
   display: none;
 }
+/*-----------------------------------
+...............VOLUNTEER PAGE.................
+----------------------------------- */
+.centered {
+  position: relative;
+  text-align: center;
+}
+.centered figure img {
+  width: 100%;
+  max-width: 550px;
+}
+.centered a:link,
+a:visited {
+  padding: 2% 5%;
+}
+.centered figcaption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #FFFEEA;
+  opacity: 0.8;
+  padding-top: 15px;
+}
 @media (min-width: 990px) {
   header .desktopnav {
     display: inline;
