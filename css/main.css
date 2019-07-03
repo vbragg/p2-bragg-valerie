@@ -18,6 +18,20 @@
   text-align: center;
   border: 3px solid #fefdf7;
 }
+.bluebuttonsvol {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  background-color: #000654;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  width: 50%;
+}
 * {
   margin: 0;
   padding: 0;
@@ -154,7 +168,8 @@ body {
   overflow-x: hidden;
 }
 h1,
-h2 {
+h2,
+h4 {
   font-family: 'Roboto Slab', serif;
   padding: 2%;
   text-align: center;
@@ -251,6 +266,9 @@ footer .iconsfooter {
 footer .iconsfooter figure img {
   width: 20px;
 }
+footer .iconsfooter figure figcaption {
+  font-family: 'Nunito', sans-serif;
+}
 footer .iconsfooter .iconflexfooter {
   display: flex;
   flex-flow: row nowrap;
@@ -269,7 +287,9 @@ footer .iconsfooter .iconflexfooter {
 }
 .centered figure img {
   width: 100%;
+  height: 100%;
   max-width: 550px;
+  max-height: 300px;
 }
 .centered a:link,
 a:visited {
@@ -277,13 +297,34 @@ a:visited {
 }
 .centered figcaption {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   background-color: #FFFEEA;
   opacity: 0.8;
-  padding-top: 15px;
+  padding: 15px 0;
+}
+#blueborder {
+  border: 15px solid #000654;
+}
+#volunteerpage {
+  display: block;
+  text-align: center;
+}
+#volunteerpage #bluebuttonflex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  background-color: #000654;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  width: 50%;
 }
 @media (min-width: 990px) {
   header .desktopnav {
@@ -384,5 +425,21 @@ a:visited {
   }
   .blue article {
     width: 50%;
+  }
+  /*-----------------------------------
+...............VOLUNTEER PAGE.................
+----------------------------------- */
+  #volunteerpage {
+    display: block;
+  }
+  #volunteerpage article {
+    width: 100%;
+  }
+  .centered {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1% 3%;
+    justify-content: center;
+    align-items: stretch;
   }
 }
