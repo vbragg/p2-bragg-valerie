@@ -189,19 +189,26 @@ main {
 ----------------------------------- */
 
 footer {
+	background-color: @color-blue;
+	color: @color-offwhite;
   padding: 2% 0;
   .iconsfooter {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  figure {
-    padding: 8px 0;
-    img {
-      width: 100%;
-      max-width: 25px;
-    }
-  }
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: flex-start;
+			padding-left: 45%; 
+			figure {
+				img {
+				width: 20px;
+				}
+			}
+			.iconflexfooter {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: center;
+				padding: 5px 0 5px 5px;
+	}
 }
 }
 
