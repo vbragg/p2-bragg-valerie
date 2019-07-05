@@ -323,6 +323,17 @@ a:visited {
   flex-flow: column nowrap;
   align-items: stretch;
 }
+/*-----------------------------------
+...............THRIFT PAGE.................
+----------------------------------- */
+#blueborderpadding {
+  border: 15px solid #000654;
+  padding: 10px;
+}
+#redborderpadding {
+  border: 15px solid #d42729;
+  padding: 10px;
+}
 @media (min-width: 990px) {
   header .desktopnav {
     display: inline;
