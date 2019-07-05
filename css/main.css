@@ -168,6 +168,7 @@ body {
 }
 h1,
 h2,
+h3,
 h4 {
   font-family: 'Roboto Slab', serif;
   padding: 2%;
@@ -176,7 +177,8 @@ h4 {
 h1 {
   font-size: 3rem;
 }
-h2 {
+h2,
+h3 {
   font-size: 1.25rem;
 }
 #stretchimage {
@@ -246,7 +248,11 @@ main figcaption {
 }
 main p {
   padding: 1% 2%;
-  font-size: 1rem;
+  font-size: .9rem;
+}
+.thriftfont {
+  font-size: .8125rem;
+  text-align: center;
 }
 aside {
   display: none;
@@ -326,13 +332,29 @@ a:visited {
 /*-----------------------------------
 ...............THRIFT PAGE.................
 ----------------------------------- */
-#blueborderpadding {
+.blueborderpadding {
   border: 15px solid #000654;
   padding: 10px;
 }
-#redborderpadding {
+.redborderpadding {
   border: 15px solid #d42729;
   padding: 10px;
+}
+.picright,
+.picleft {
+  width: 100%;
+  padding: 5% 0;
+}
+.picright h3,
+.picleft h3 {
+  text-align: center;
+}
+.picright figure img,
+.picleft figure img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
 }
 @media (min-width: 990px) {
   header .desktopnav {
@@ -499,5 +521,18 @@ a:visited {
   }
   .footerlogo {
     display: block;
+  }
+  /*-----------------------------------
+...............THRIFT PAGE.................
+----------------------------------- */
+  .picright {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+  .picleft {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: flex-start;
   }
 }

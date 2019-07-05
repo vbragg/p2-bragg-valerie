@@ -104,7 +104,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h4 {
+h1, h2, h3, h4 {
   font-family: @font-headers;
   padding: 2%;
   text-align: center;
@@ -114,9 +114,10 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
+h2, h3 {
   font-size: 1.25rem;
 }
+
 
 #stretchimage {
   display: block;
@@ -180,9 +181,14 @@ main {
   }
   p {
     padding: 1% 2%;
-    font-size: 1rem;
+    font-size: .9rem;
   }
 }
+
+.thriftfont {
+		font-size: .8125rem;
+		text-align: center;
+	}
 
 aside {
 	display: none;
@@ -275,16 +281,31 @@ footer {
 ...............THRIFT PAGE.................
 ----------------------------------- */
 
-#blueborderpadding {
+.blueborderpadding {
 		border: 15px solid @color-blue;
 		padding: 10px;
 }
 
-#redborderpadding {
+.redborderpadding {
 	border: 15px solid @color-red;
 	padding: 10px;
 }
 
+.picright, .picleft {
+	width: 100%;
+	padding: 5% 0;
+	h3 {
+		text-align: center;
+	}
+	figure {
+		img {
+			width: 100%;
+			max-width: 400px;
+			display: block;
+			margin: auto;
+		}
+	}
+}
 
 @media (min-width: 990px) {
         header {
@@ -460,6 +481,23 @@ footer {
 
 .footerlogo {
 	display: block;
+}
+
+/*-----------------------------------
+...............THRIFT PAGE.................
+----------------------------------- */
+
+
+.picright {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: flex-start;
+}
+
+.picleft {
+	display: flex;
+	flex-flow: row-reverse nowrap;
+	align-items: flex-start;
 }
 
 
