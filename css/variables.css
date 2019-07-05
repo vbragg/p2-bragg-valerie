@@ -7,6 +7,18 @@
   text-align: center;
   border: none;
   font-weight: bold;
+  width: 50%;
+}
+.twobluebuttons {
+  background-color: #000654;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  color: #fefdf7;
+  text-align: center;
+  border: none;
+  font-weight: bold;
+  width: 25%;
 }
 .redbuttons {
   background-color: #d42729;
@@ -17,18 +29,4 @@
   color: #fefdf7;
   text-align: center;
   border: 3px solid #fefdf7;
-}
-.bluebuttonsvol {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: stretch;
-  background-color: #000654;
-  padding: 15px;
-  margin-bottom: 20px;
-  font-family: 'Nunito', sans-serif;
-  color: #fefdf7;
-  text-align: center;
-  border: none;
-  font-weight: bold;
-  width: 50%;
 }
