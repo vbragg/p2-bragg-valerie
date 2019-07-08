@@ -55,34 +55,53 @@ header .flexheader {
   background-color: #000654;
   color: #fefdf7;
   font-family: 'Roboto Slab', serif;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
   padding-bottom: 2%;
   padding-top: 25px;
+  min-height: 200px;
 }
-header .flexheader .icon img {
+header .flexheader .inner {
+  background: url('../img/american-flag.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  position: relative;
+}
+header .flexheader .inner .flexit {
+  height: 300px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+header .flexheader .inner .icon img {
   display: block;
   margin: auto;
   width: 100%;
   max-width: 125px;
 }
-header .flexheader p {
+header .flexheader .inner p {
   text-align: center;
 }
-header .flexheader #headertitle {
+header .flexheader .inner #headertitle {
   font-size: 2rem;
   padding: 3% 2%;
 }
-header .flexheader #headersubtitle {
+header .flexheader .inner #headersubtitle {
   font-size: 1rem;
 }
-header .flexheader .headericons {
+header .flexheader .inner .headericons {
   display: none;
+}
+header .flexheader .blackcolor {
+  background-color: #000000;
+  height: 300px;
+  opacity: 0.8;
 }
 header .desktopnav {
   display: none;
+}
+header #flag {
+  opacity: 0.3;
 }
 /*****this is controlling hamburger menu *****/
 .hamburger {
@@ -245,6 +264,7 @@ section {
 main p,
 main figcaption {
   font-family: 'Nunito', sans-serif;
+  font-size: .8125rem;
 }
 main p {
   padding: 1% 2%;
@@ -342,7 +362,6 @@ a:visited {
 }
 .picright,
 .picleft {
-  width: 100%;
   padding: 5% 0;
 }
 .picright h3,
@@ -351,7 +370,6 @@ a:visited {
 }
 .picright figure img,
 .picleft figure img {
-  width: 100%;
   max-width: 400px;
   display: block;
   margin: auto;
@@ -390,44 +408,45 @@ a:visited {
   header .desktopnav ul li:nth-child(3) {
     text-align: center;
   }
-  header .flexheader {
+  header .flexit {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
   }
-  header .flexheader .icon img {
+  header .flexit .icon img {
     padding: 10px;
   }
-  header .flexheader .headertext {
+  header .flexit .headertext {
     flex-grow: 2;
   }
-  header .flexheader .headertext #headertitle,
-  header .flexheader .headertext #headersubtitle {
+  header .flexit .headertext #headertitle,
+  header .flexit .headertext #headersubtitle {
     text-align: center;
   }
-  header .flexheader .headertext #headersubtitle {
+  header .flexit .headertext #headersubtitle {
     font-style: italic;
   }
-  header .flexheader .headericons {
+  header .flexit .headericons {
     display: flex;
     flex-flow: column nowrap;
     padding: 10px;
   }
-  header .flexheader .headericons figure {
+  header .flexit .headericons figure {
     flex-grow: 1;
   }
-  header .flexheader .headericons figure img {
+  header .flexit .headericons figure img {
     width: 100%;
     max-width: 15px;
   }
-  header .flexheader .headericons .iconflex {
+  header .flexit .headericons .iconflex {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     padding: 5px 0 5px 5px;
   }
-  header .flexheader .headericons .iconflex figcaption {
+  header .flexit .headericons .iconflex figcaption {
     font-size: .65rem;
     padding-left: 5px;
   }
@@ -441,9 +460,6 @@ a:visited {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-  }
-  .offwhite article {
-    width: 50%;
   }
   .offwhite article figure img {
     width: 100%;
@@ -478,6 +494,7 @@ a:visited {
   }
   .mainbody {
     flex-grow: 3;
+    padding: 0 2%;
   }
   footer {
     display: flex;
@@ -529,6 +546,12 @@ a:visited {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-start;
+  }
+  .picright figure {
+    flex-grow: 2;
+  }
+  .picright article {
+    flex-grow: 3;
   }
   .picleft {
     display: flex;
