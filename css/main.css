@@ -100,9 +100,6 @@ header .flexheader .blackcolor {
 header .desktopnav {
   display: none;
 }
-header #flag {
-  opacity: 0.3;
-}
 /*****this is controlling hamburger menu *****/
 .hamburger {
   background: none;
@@ -408,45 +405,45 @@ a:visited {
   header .desktopnav ul li:nth-child(3) {
     text-align: center;
   }
-  header .flexit {
+  header .flexheader .inner .flexit {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
   }
-  header .flexit .icon img {
+  header .flexheader .inner .flexit .icon img {
     padding: 10px;
   }
-  header .flexit .headertext {
+  header .flexheader .inner .headertext {
     flex-grow: 2;
   }
-  header .flexit .headertext #headertitle,
-  header .flexit .headertext #headersubtitle {
+  header .flexheader .inner .headertext #headertitle,
+  header .flexheader .inner .headertext #headersubtitle {
     text-align: center;
   }
-  header .flexit .headertext #headersubtitle {
+  header .flexheader .inner .headertext #headersubtitle {
     font-style: italic;
   }
-  header .flexit .headericons {
+  header .flexheader .inner .headericons {
     display: flex;
     flex-flow: column nowrap;
     padding: 10px;
   }
-  header .flexit .headericons figure {
+  header .flexheader .inner .headericons figure {
     flex-grow: 1;
   }
-  header .flexit .headericons figure img {
+  header .flexheader .inner .headericons figure img {
     width: 100%;
     max-width: 15px;
   }
-  header .flexit .headericons .iconflex {
+  header .flexheader .inner .headericons .iconflex {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     padding: 5px 0 5px 5px;
   }
-  header .flexit .headericons .iconflex figcaption {
+  header .flexheader .inner .headericons .iconflex figcaption {
     font-size: .65rem;
     padding-left: 5px;
   }
@@ -465,6 +462,10 @@ a:visited {
     width: 100%;
     max-width: 550px;
     margin-top: 1%;
+  }
+  .offwhite article figure img #gigipic {
+    height: 100%;
+    min-height: 500px;
   }
   .blue {
     display: flex;

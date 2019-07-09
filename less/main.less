@@ -66,9 +66,6 @@ header {
     .desktopnav {
       display: none;
     }
-		#flag {
-			opacity: 0.3;
-		}
 	}
 
 /*****this is controlling hamburger menu *****/
@@ -359,50 +356,54 @@ footer {
 							}
 						}
 					}
-					.flexit {
-						width: 100%;
-						display: flex;
-						flex-flow: row nowrap;
-						align-items: center;
-						justify-content: space-between;
-						.icon {
-							img {
-								padding: 10px;
-							}
-						}
-						.headertext {
-							flex-grow: 2;
-							#headertitle, #headersubtitle {
-								text-align: center;
-							}
-							#headersubtitle {
-								font-style: italic;
-							}
-						}
-						.headericons {
-          		display: flex;
-          		flex-flow: column nowrap;
-							padding: 10px;
-							figure {
-								flex-grow: 1;
-								img {
+					.flexheader {
+						.inner {
+							.flexit {
 								width: 100%;
-								max-width: 15px;
-								}
-							}
-							.iconflex {
 								display: flex;
 								flex-flow: row nowrap;
 								align-items: center;
-								padding: 5px 0 5px 5px;
-								figcaption {
-									font-size: .65rem;
-									padding-left: 5px;
+								justify-content: space-between;
+								.icon {
+									img {
+										padding: 10px;
+									}
 								}
 							}
-						}
-    			}
-			}
+							.headertext {
+								flex-grow: 2;
+								#headertitle, #headersubtitle {
+									text-align: center;
+								}
+								#headersubtitle {
+									font-style: italic;
+								}
+							}
+							.headericons {
+	          		display: flex;
+	          		flex-flow: column nowrap;
+								padding: 10px;
+								figure {
+									flex-grow: 1;
+									img {
+									width: 100%;
+									max-width: 15px;
+									}
+								}
+								.iconflex {
+									display: flex;
+									flex-flow: row nowrap;
+									align-items: center;
+									padding: 5px 0 5px 5px;
+									figcaption {
+										font-size: .65rem;
+										padding-left: 5px;
+									}
+								}
+							}
+	    			}
+					}
+				}
 
 			.menu, .hamburger, .cross {
 				display: none;
@@ -419,6 +420,10 @@ footer {
 				width: 100%;
 				max-width: 550px;
 				margin-top: 1%;
+				#gigipic {
+					height: 100%;
+					min-height: 500px;
+				}
 			}
 		}
 	}
