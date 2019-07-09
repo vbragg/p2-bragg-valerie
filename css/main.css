@@ -371,12 +371,11 @@ a:visited {
   display: block;
   margin: auto;
 }
-#mapsec {
-  height: 500px;
-}
 #mapsec #map {
-  height: 500px;
+  height: 400px;
   width: 600px;
+  display: block;
+  margin: auto;
 }
 @media (min-width: 990px) {
   header .desktopnav {
