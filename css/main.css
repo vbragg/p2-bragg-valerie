@@ -177,6 +177,12 @@ header .desktopnav {
 }
 /*hamburger menu ends */
 /*-----------------------------------
+...............DESKTOP DROPDOWN MENU.................
+----------------------------------- */
+.hide {
+  display: none;
+}
+/*-----------------------------------
 ...............BODY.................
 ----------------------------------- */
 body {
@@ -321,6 +327,10 @@ footer .iconsfooter .iconflexfooter img {
   max-height: 300px;
 }
 .centered a:link,
+.centered a:visited {
+  padding: 2% 5%;
+}
+.centered a:link,
 a:visited {
   padding: 2% 5%;
 }
@@ -372,38 +382,35 @@ a:visited {
   margin: auto;
 }
 @media (min-width: 990px) {
-  header .desktopnav {
-    display: inline;
-  }
-  header .desktopnav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000654;
+  header .desktopmenu {
     border-bottom: 3px solid #d42729;
+    background-color: #000654;
   }
-  header .desktopnav ul li {
+  header .desktopmenu button {
+    display: inline;
+    background-color: #000654;
+    padding: 15px;
+    color: #fefdf7;
+  }
+  header .desktopmenu ul li {
+    width: 160px;
     list-style-type: none;
-    padding: 1% 5% 2% 5%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #d42729;
+    color: #fefdf7;
   }
-  header .desktopnav ul li a:link,
-  header .desktopnav ul li a:visited {
+  header .desktopmenu ul li a:link,
+  header .desktopmenu ul li a:visited {
     color: #fefdf7;
     font-family: 'Nunito', sans-serif;
     font-size: .75rem;
   }
-  header .desktopnav ul li a:hover {
+  header .desktopmenu ul li:hover {
     text-decoration: underline;
-    color: #d42729;
+    background-color: #000654;
     font-weight: 600;
-  }
-  header .desktopnav ul li:nth-child(2) {
-    text-align: center;
-    padding-right: 70px;
-  }
-  header .desktopnav ul li:nth-child(3) {
-    text-align: center;
   }
   header .flexheader .inner .flexit {
     width: 100%;

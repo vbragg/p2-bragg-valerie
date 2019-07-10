@@ -112,6 +112,13 @@ header {
 /*hamburger menu ends */
 
 /*-----------------------------------
+...............DESKTOP DROPDOWN MENU.................
+----------------------------------- */
+
+.hide {
+	display: none;
+}
+/*-----------------------------------
 ...............BODY.................
 ----------------------------------- */
 
@@ -263,6 +270,9 @@ footer {
 			max-height: 300px;
 		}
 	}
+	a:link, a:visited {
+		padding: 2% 5%;
+	}
 }
 
 .centered a:link, a:visited {
@@ -324,38 +334,37 @@ footer {
 
 @media (min-width: 990px) {
         header {
-					.desktopnav {
-						display: inline;
-						ul {
-							display: flex;
-							flex-flow: row nowrap;
-							justify-content: space-between;
-							align-items: center;
-							background-color: @color-blue;
+					.desktopmenu {
 							border-bottom: 3px solid @color-red;
-							li {
-								list-style-type: none;
-								padding:  1% 5% 2% 5%;
-								a:link, a:visited {
+							background-color: @color-blue;
+						button {
+							display: inline;
+							background-color: @color-blue;
+							padding: 15px;
+							color: @color-offwhite;
+						}
+							ul {
+								li {
+									width: 160px;
+									list-style-type: none;
+									display: block;
+									text-align: center;
+									padding: 15px;
+									background-color: @color-red;
 									color: @color-offwhite;
-									font-family: @font-body;
-									font-size: .75rem;
+									a:link, a:visited {
+										color: @color-offwhite;
+										font-family: @font-body;
+										font-size: .75rem;
+									}
 								}
-								a:hover {
-									text-decoration: underline;
-									color: @color-red;
-									font-weight: 600;
+									li:hover {
+										text-decoration: underline;
+										background-color: @color-blue;
+										font-weight: 600;
 								}
-							}
-							li:nth-child(2) {
-								text-align: center;
-								padding-right: 70px;
-							}
-							li:nth-child(3) {
-								text-align: center;
 							}
 						}
-					}
 					.flexheader {
 						.inner {
 							.flexit {
