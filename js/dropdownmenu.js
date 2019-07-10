@@ -10,11 +10,11 @@ function hideMenu () {
   desktopMenu.classList.add('hide');
 } */
 
-var openButton = document.getElementsByClassName('menu-open');
-var desktopMenu = document.getElementsByClassName('dropdownmenu');
+var openButton = document.querySelectorAll('.desktopmenu button');
+var desktopMenu = document.querySelectorAll('.desktopmenu ul');
 
 function showMenu () {
-  desktopMenu.removeAttribute("id", "hide");
+  desktopMenu.removeAttribute("id");
 }
 
 function hideMenu () {
