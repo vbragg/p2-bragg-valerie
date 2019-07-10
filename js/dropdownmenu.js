@@ -1,6 +1,5 @@
-var openButton = document.getElementById('menu-open');
+/*var openButton = document.getElementById('menu-open');
 var desktopMenu = document.getElementById('dropdownmenu');
-var heyCool = document.querySelectorAll('li');
 
 
 function showMenu() {
@@ -9,6 +8,17 @@ function showMenu() {
 
 function hideMenu () {
   desktopMenu.classList.add('hide');
+} */
+
+var openButton = document.getElementsByClassName('menu-open');
+var desktopMenu = document.getElementsByClassName('dropdownmenu');
+
+function showMenu () {
+  desktopMenu.removeAttribute("id", "hide");
+}
+
+function hideMenu () {
+  desktopMenu.setAttribute("id", "hide");
 }
 
 
