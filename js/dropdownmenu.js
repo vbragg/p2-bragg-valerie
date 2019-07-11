@@ -10,17 +10,38 @@ function hideMenu () {
   desktopMenu.classList.add('hide');
 } */
 
-var openButton = document.querySelectorAll('.desktopmenu button');
+var openButton = document.querySelectorAll('.desktopmenu div.menu-open');
 var desktopMenu = document.querySelectorAll('.desktopmenu ul');
 
 function showMenu () {
-  desktopMenu.removeAttribute("id");
+  desktopMenu[0].classList.remove('hide');
 }
 
 function hideMenu () {
-  desktopMenu.setAttribute("id", "hide");
+  desktopMenu[0].classList.add('hide');
+}
+
+for (i=0; i < openButton.length; i++) {
+  openButton[i].addEventListener('mouseenter', showMenu);
+  openButton[i].addEventListener('mouseleave', hideMenu);
+
 }
 
 
-openButton.addEventListener('mouseenter', showMenu);
-openButton.addEventListener('click', hideMenu);
+
+
+/* function loopThrough() {
+
+  const changeColor = () => this.classList.toggle('teal');
+
+  for(let i = 0; i < this.textContent.length * 2; i++) {
+    setTimeout(changeColor, i * 1000);
+  };
+
+};
+
+
+// The Event Listener
+for (let i = 0; i < myBoxes.length; i++) {
+  myBoxes[i].addEventListener('click', loopThrough);
+}; */
