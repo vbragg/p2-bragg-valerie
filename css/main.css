@@ -385,12 +385,23 @@ a:visited {
   header .desktopmenu {
     border-bottom: 3px solid #d42729;
     background-color: #000654;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  header .desktopmenu .menu-open {
+    position: relative;
   }
   header .desktopmenu button {
     display: inline;
     background-color: #000654;
     padding: 15px;
     color: #fefdf7;
+    width: 160px;
+  }
+  header .desktopmenu ul {
+    position: absolute;
+    z-index: 1;
   }
   header .desktopmenu ul li {
     width: 160px;

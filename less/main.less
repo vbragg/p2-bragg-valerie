@@ -337,13 +337,23 @@ footer {
 					.desktopmenu {
 							border-bottom: 3px solid @color-red;
 							background-color: @color-blue;
+							display: flex;
+							flex-flow: row nowrap;
+							justify-content: space-around;
+						.menu-open {
+							position: relative;
+						}
+
 						button {
 							display: inline;
 							background-color: @color-blue;
 							padding: 15px;
 							color: @color-offwhite;
+							width: 160px;
 						}
 							ul {
+								position: absolute;
+								z-index: 1;
 								li {
 									width: 160px;
 									list-style-type: none;
