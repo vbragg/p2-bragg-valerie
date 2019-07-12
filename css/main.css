@@ -210,7 +210,6 @@ section {
 }
 .offwhite article figure img {
   border: 15px solid #d42729;
-  width: 100%;
   max-width: 600px;
   display: block;
   margin: auto;
@@ -459,7 +458,6 @@ a:visited {
     align-items: center;
   }
   .offwhite article figure img {
-    width: 100%;
     max-width: 550px;
     margin-top: 1%;
   }
