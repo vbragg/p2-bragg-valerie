@@ -382,6 +382,11 @@ a:visited {
   margin: auto;
 }
 @media (min-width: 990px) {
+  header {
+    /*-----------------------------------
+...............DROPDOWN MENU.................
+----------------------------------- */
+  }
   header .desktopmenu {
     border-bottom: 3px solid #d42729;
     background-color: #000654;
