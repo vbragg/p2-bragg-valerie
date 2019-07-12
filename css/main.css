@@ -285,7 +285,7 @@ footer .iconsfooter {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start !important;
 }
 footer .iconsfooter figure figcaption {
   font-family: 'Nunito', sans-serif;
