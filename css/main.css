@@ -234,6 +234,9 @@ section {
   display: block;
   margin: 4% auto;
 }
+.hide {
+  display: none;
+}
 .blue {
   background-color: #000654;
   color: #fefdf7;
