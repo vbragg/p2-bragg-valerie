@@ -241,12 +241,15 @@ section {
   background-color: #000654;
   color: #fefdf7;
 }
+.blue article {
+  padding: 0 2%;
+}
 .blue article figure {
   padding-left: 4%;
 }
 .blue article figure img {
   border: 15px solid #fefdf7;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   display: block;
   margin: 4% auto;
