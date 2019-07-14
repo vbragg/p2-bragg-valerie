@@ -97,7 +97,7 @@ header .flexheader .blackcolor {
   height: 300px;
   opacity: 0.8;
 }
-header .desktopnav {
+header .desktopmenu {
   display: none;
 }
 /*****this is controlling hamburger menu *****/
@@ -417,7 +417,7 @@ a:visited {
     display: block;
     text-align: center;
     padding: 15px 0;
-    background-color: #d42729;
+    background-color: #000654;
     color: #fefdf7;
   }
   header .desktopmenu ul li a:link,
@@ -428,7 +428,7 @@ a:visited {
   }
   header .desktopmenu ul li:hover {
     text-decoration: underline;
-    background-color: #000654;
+    background-color: #d42729;
     font-weight: 600;
   }
   header .flexheader .inner .flexit {
