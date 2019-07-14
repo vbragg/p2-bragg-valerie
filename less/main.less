@@ -269,18 +269,27 @@ footer {
 			max-height: 300px;
 		}
 	}
+	 a:link, a:visited {
+		text-decoration: none;
+		font-family: @font-body;
+		color: @color-blue;
+		font-size: 1rem;
+	}
+	a:hover {
+	color: @color-red;
+	text-decoration: underline;
+	}
 }
 
-.centered a:link, a:visited {
-    padding: 2% 5%;
-}
+
+
 
 .centered figcaption {
   position: absolute;
   top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width:;
+  transform: translate(-50%, -65%);
+  width: 90%;
   background-color: @color-offwhite;
   opacity: 0.8;
 	padding: 15px 0;

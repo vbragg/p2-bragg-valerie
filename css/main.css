@@ -329,15 +329,22 @@ footer .iconsfooter .iconflexfooter img {
   max-height: 300px;
 }
 .centered a:link,
-a:visited {
-  padding: 2% 5%;
+.centered a:visited {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color: #000654;
+  font-size: 1rem;
+}
+.centered a:hover {
+  color: #d42729;
+  text-decoration: underline;
 }
 .centered figcaption {
   position: absolute;
   top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: ;
+  transform: translate(-50%, -65%);
+  width: 90%;
   background-color: #fefdf7;
   opacity: 0.8;
   padding: 15px 0;
