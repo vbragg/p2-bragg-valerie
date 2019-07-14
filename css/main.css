@@ -208,7 +208,11 @@ section {
 .offwhite {
   background-color: #fefdf7;
 }
+.offwhite article {
+  padding: 0 2%;
+}
 .offwhite article figure img {
+  width: 90%;
   border: 15px solid #d42729;
   max-width: 600px;
   display: block;
@@ -371,6 +375,7 @@ a:visited {
 }
 .picright figure img,
 .picleft figure img {
+  width: 70%;
   max-width: 400px;
   display: block;
   margin: auto;
@@ -462,13 +467,13 @@ a:visited {
     justify-content: center;
     align-items: center;
   }
+  .offwhite article {
+    width: 50%;
+  }
   .offwhite article figure img {
+    flex-basis: 50%;
     max-width: 550px;
     margin: 10px;
-  }
-  .offwhite article figure img #gigipic {
-    height: 100%;
-    min-height: 500px;
   }
   .blue {
     display: flex;
