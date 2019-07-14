@@ -296,24 +296,27 @@ footer {
   background-color: #000654;
   color: #fefdf7;
   padding: 2% 0;
-}
-footer .iconsfooter {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start !important;
+  justify-content: flex-start;
+  align-items: center;
+  /*.iconsfooter {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: flex-start; */
 }
-footer .iconsfooter figure figcaption {
+footer figure figcaption {
   font-family: 'Nunito', sans-serif;
 }
-footer .iconsfooter .iconflexfooter {
+footer .iconflexfooter {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: ;
+  align-items: ;
   padding: 5px 0 5px 5px;
 }
-footer .iconsfooter .iconflexfooter img {
+footer .iconflexfooter img {
   width: 20px;
 }
 .footerlogo {

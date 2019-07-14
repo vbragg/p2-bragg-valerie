@@ -177,7 +177,7 @@ section {
   color: @color-offwhite;
 	article {
 				padding: 0 2%;
-		figure {
+	figure {
 			padding-left: 4%;
 			img {
 				border: 15px solid @color-offwhite;
@@ -231,11 +231,15 @@ footer {
 	background-color: @color-blue;
 	color: @color-offwhite;
   padding: 2% 0;
-  .iconsfooter {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+  /*.iconsfooter {
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: center;
-			align-items: flex-start !important;
+			align-items: flex-start; */
 			figure {
 				figcaption {
 					font-family: @font-body;
@@ -244,14 +248,13 @@ footer {
 			.iconflexfooter {
 				display: flex;
 				flex-flow: row nowrap;
-				justify-content: center;
-				align-items: flex-start;
+				justify-content: ;
+				align-items: ;
 				padding: 5px 0 5px 5px;
 				img {
 					width: 20px;
 				}
 	}
-}
 }
 
 .footerlogo {
