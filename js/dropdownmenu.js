@@ -10,8 +10,33 @@ function hideMenu () {
   desktopMenu.classList.add('hide');
 } */
 
-var openButton = document.querySelectorAll('.desktopmenu div.menu-open');
-var desktopMenu = document.querySelectorAll('.desktopmenu ul');
+var openButton = document.getElementsByClassName('menu-open');
+var desktopMenu2 = document.getElementsByClassName('dropdownmenu');
+
+ function dropDown () {
+  for(i = 0; i < openButton.length; i++) {
+    desktopMenu2[i].classList.remove('hide');
+  }
+}
+
+function hideDrop () {
+ for(i = 0; i < openButton.length; i++) {
+   desktopMenu2[i].classList.add('hide');
+ }
+}
+
+//firstOne.addEventListener('mouseenter', dropDown);
+//firstOne.addEventListener('mouseleave', hideDrop);
+
+
+
+for(i = 0; i < openButton.length; i++) {
+  openButton[i].addEventListener('mouseenter', dropDown);
+  openButton[i].addEventListener('mouseleave', hideDrop);
+}
+
+
+/*
 
 function showMenu () {
   desktopMenu[0].classList.remove('hide');
@@ -22,8 +47,8 @@ function hideMenu () {
 }
 
 for (i=0; i < openButton.length; i++) {
-  openButton[i].addEventListener('mouseenter', showMenu);
-  openButton[i].addEventListener('mouseleave', hideMenu);
+  openButton[i].addEventListener('mouseover', showMenu);
+  openButton[i].addEventListener('mouseout', hideMenu);
 
 }
 
