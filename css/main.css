@@ -240,8 +240,8 @@ section {
   display: block;
   margin: 4% auto;
 }
-.offwhite .buttonblue .buttonblue:hover {
-  background-color: red;
+.offwhite .buttonblue:hover {
+  background-color: #d42729;
 }
 .hide {
   display: none;
@@ -294,6 +294,14 @@ main p {
 .thriftfont {
   font-size: .8125rem;
   text-align: center;
+}
+#translationcenter {
+  display: block;
+  font-style: italic;
+  text-align: center;
+}
+#translationcenter p {
+  font-size: .625rem !important;
 }
 aside {
   display: none;
