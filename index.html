@@ -32,7 +32,7 @@
 					<div class="inner">
 						<div class="flexit">
 	          <figure class="icon">
-	            <img src="img/logo.png" alt="VSTN Logo" title="VSTN">
+	            <a href="index.html"><img src="img/logo.png" alt="VSTN Logo" title="VSTN"></a>
 	          </figure>
 	          <div class="headertext">
 	            <p id="headertitle">Volunteers Serving the Need</p>
@@ -58,13 +58,45 @@
 				</div>
 	      </div> <!--closeflexheader-->
 
-	      <nav class="desktopnav">
-	        <ul>
-	          <li><a href="">HOW TO HELP</a></li>
-	          <li><a href="">I NEED HELP</a></li>
-	          <li><a href="">LEARN MORE</a></li>
-	        </ul>
-	      </nav>
+				<div class="desktopmenu">
+
+					<div class="menu-open" id="helpopen">
+
+		        <button>HOW TO HELP</button>
+							<ul class= "dropdownmenu hide">
+			          <li><a href="volunteer.html">VOLUNTEER</a></li>
+			          <li><a href="#">SHOP</a></li>
+			          <li><a href="#">DONATE</a></li>
+								<li><a href="#">SPONSOR A VET</a></li>
+		        </ul>
+
+				</div>
+
+				<div class="need-help-open">
+
+					<button>I NEED HELP</button>
+						<ul class="dropdownhelpmenu hide">
+							<li><a href="">OUR FOOD PROGRAM</a></li>
+							<li><a href="">FORM TO REQUEST HELP</a></li>
+							<li><a href="">SPONSOR A VET</a></li>
+					</ul>
+
+				</div>
+
+				<div class="learn-more-open">
+
+					<button>LEARN MORE</button>
+						<ul class="dropdownlearnmenu hide">
+							<li><a href="">WHO WE ARE</a></li>
+							<li><a href="thrift.html">THRIFT STORE</a></li>
+							<li><a href="">FOOD PROGRAM</a></li>
+							<li><a href="">CONTACT</a></li>
+					</ul>
+
+				</div>
+
+				</div>
+
 
 	      <nav class="menu">
 	        <ul>
@@ -91,7 +123,16 @@
 				<p>The Mission of Volunteers Serving The Need (VSTN) is to provide needy Military Veterans and Surviving Spouses in Webb County TX with monthly groceries, personal hygiene and basic household items.</p>
 				<p>We provide weekly fruits, vegetables and bread. When available, we also offer frozen foods and other essential household items.</p>
 				<p>Volunteers Serving the Need, also known as The Veterans Project, is funded by the sale of donated items in our VSTN Thrift Store and by financial gifts and grants from the community.</p>
-				<button class="buttonblue">READ MORE</button>
+
+				<button class="buttonblue" id="buttonshow">READ MORE</button>
+				<button class="buttonblue hide" id="buttonhide">SHOW LESS</button>
+
+					<div id="moremission" class="hide">
+						<p>All funds are used to support the Veterans Project’s Mission to acquire groceries and other items for DIRECT distribution to eligible Military Veterans and Surviving Spouses in Webb County TX and to cover operational expenses.</p>
+     				<p>We rely on the generosity and compassion of those who Volunteer, Shop, Donate or Contribute to our efforts to Make a Difference in the Lives of those who have made a Difference in Ours.</p>
+     				<p>Please feel free to call (956) 717-2960 or stop by at 1202 Salinas Ave. Laredo, TX. 78040.  Shop, Volunteer, Donate or Contribute, it all helps. </p>
+					</div>
+
 			</article>
 
 			<article>
@@ -126,9 +167,8 @@
 							<h2>Our Story</h2>
 							<p>It all started in a carport with 2 bags of donated clothes and a dream on July 2, 2009. The dream was to alleviate the struggle for Military Veterans who fall behind the common misconception that the U.S. Government provides assistance to all Military Veterans.</p>
 							<p>Mrs. Ramos sold the 2 bags of donated clothing and continued to sell donated items in order to purchase groceries for the 37 families she had Adopted in to the program</p>
-							<!--<p>Mrs. Ramos was granted 501c3 status for Volunteers Serving the Need in October 2009 and set out to expand the program. Mrs. Ramos continued to sell donated items to purchase groceries and by January 2010, The VSTN Thrift Store became an official reality. Mrs. Ramos had also been granted permission to partner with the South Texas Food Bank. The community wastaking notice of the Nutritional and Economic needs of Military Veterans and Surviving Spouses within Webb County TX.</p>
-							<p>By August 2011, VSTN had expanded the program to serve groceries to several hundred Military families.</p>-->
-							<button class="buttonblue">READ MORE</button>
+							<p>Mrs. Ramos was granted 501c3 status for Volunteers Serving the Need in October 2009 and set out to expand the program. Mrs. Ramos continued to sell donated items to purchase groceries and by January 2010, The VSTN Thrift Store became an official reality. Mrs. Ramos had also been granted permission to partner with the South Texas Food Bank. The community wastaking notice of the Nutritional and Economic needs of Military Veterans and Surviving Spouses within Webb County TX.</p>
+							<p>By August 2011, VSTN had expanded the program to serve groceries to several hundred Military families.</p>
 						</article>
 
 						<article id="gigipic">
@@ -168,6 +208,10 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/hamburger.js"> </script>
+		<script src="js/dropdownmenu.js"> </script>
+		<script src="js/need-help-dropdown.js"> </script>
+		<script src="js/learn-more-dropdown.js"> </script>
+		<script src="js/readmore.js"> </script>
 
 
 	</body>

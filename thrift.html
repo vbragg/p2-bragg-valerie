@@ -32,7 +32,7 @@
 					<div class="inner">
 						<div class="flexit">
 	          <figure class="icon">
-	            <img src="img/logo.png" alt="VSTN Logo" title="VSTN">
+	            <a href="index.html"><img src="img/logo.png" alt="VSTN Logo" title="VSTN"></a>
 	          </figure>
 	          <div class="headertext">
 	            <p id="headertitle">Volunteers Serving the Need</p>
@@ -58,13 +58,44 @@
 				</div>
 	      </div> <!--closeflexheader-->
 
-	      <nav class="desktopnav">
-	        <ul>
-	          <li><a href="">HOW TO HELP</a></li>
-	          <li><a href="">I NEED HELP</a></li>
-	          <li><a href="">LEARN MORE</a></li>
-	        </ul>
-	      </nav>
+				<div class="desktopmenu">
+
+					<div class="menu-open" id="helpopen">
+
+						<button>HOW TO HELP</button>
+							<ul class= "dropdownmenu hide">
+								<li><a href="volunteer.html">VOLUNTEER</a></li>
+								<li><a href="#">SHOP</a></li>
+								<li><a href="#">DONATE</a></li>
+								<li><a href="#">SPONSOR A VET</a></li>
+						</ul>
+
+				</div>
+
+				<div class="need-help-open">
+
+					<button>I NEED HELP</button>
+						<ul class="dropdownhelpmenu hide">
+							<li><a href="">OUR FOOD PROGRAM</a></li>
+							<li><a href="">FORM TO REQUEST HELP</a></li>
+							<li><a href="">SPONSOR A VET</a></li>
+					</ul>
+
+				</div>
+
+				<div class="learn-more-open">
+
+					<button>LEARN MORE</button>
+						<ul class="dropdownlearnmenu hide">
+							<li><a href="">WHO WE ARE</a></li>
+							<li><a href="thrift.html">THRIFT STORE</a></li>
+							<li><a href="">FOOD PROGRAM</a></li>
+							<li><a href="">CONTACT</a></li>
+					</ul>
+
+				</div>
+
+				</div>
 
 	      <nav class="menu">
 	        <ul>
@@ -192,8 +223,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/hamburger.js"> </script>
-		<script src="js/backstretch.js"> </script>
-		<script src="js/splash.js"> </script>
+		<script src="js/dropdownmenu.js"> </script>
+		<script src="js/need-help-dropdown.js"> </script>
+		<script src="js/learn-more-dropdown.js"> </script>
 	</body>
 
 </html>

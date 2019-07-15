@@ -63,7 +63,7 @@ header {
 		opacity: 0.8;
 	}
 }
-    .desktopnav {
+    .desktopmenu {
       display: none;
     }
 	}
@@ -111,6 +111,13 @@ header {
 
 /*hamburger menu ends */
 
+/*-----------------------------------
+...............DESKTOP DROPDOWN MENU.................
+----------------------------------- */
+
+.hide {
+	display: none !important;
+}
 /*-----------------------------------
 ...............BODY.................
 ----------------------------------- */
@@ -166,11 +173,15 @@ section {
       .bluebuttons ();
       display: block;
       margin: 4% auto;
-    }
 		.buttonblue:hover {
 			background-color: red;
 		}
   }
+}
+
+	.hide  {
+		display: none;
+	}
 
 .blue {
   background-color: @color-blue;
@@ -235,11 +246,6 @@ footer {
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: center;
-  /*.iconsfooter {
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: center;
-			align-items: flex-start; */
 			figure {
 				figcaption {
 					font-family: @font-body;
@@ -248,8 +254,6 @@ footer {
 			.iconflexfooter {
 				display: flex;
 				flex-flow: row nowrap;
-				justify-content: ;
-				align-items: ;
 				padding: 5px 0 5px 5px;
 				img {
 					width: 20px;
@@ -285,10 +289,8 @@ footer {
 	a:hover {
 	color: @color-red;
 	text-decoration: underline;
-	}
 }
-
-
+}
 
 
 .centered figcaption {
@@ -347,38 +349,50 @@ footer {
 
 @media (min-width: 990px) {
         header {
-					.desktopnav {
-						display: inline;
-						ul {
+/*-----------------------------------
+...............DROPDOWN MENU.................
+-----------------------------------*/
+					.desktopmenu {
+							border-bottom: 3px solid @color-red;
+							background-color: @color-blue;
 							display: flex;
 							flex-flow: row nowrap;
-							justify-content: space-between;
-							align-items: center;
+							justify-content: space-around;
+						.menu-open {
+							position: relative;
+						}
+
+						button {
+							display: inline;
 							background-color: @color-blue;
-							border-bottom: 3px solid @color-red;
-							li {
-								list-style-type: none;
-								padding:  1% 5% 2% 5%;
-								a:link, a:visited {
+							padding: 15px;
+							color: @color-offwhite;
+							width: 160px;
+						}
+							ul {
+								position: absolute;
+								z-index: 1;
+								li {
+									width: 160px;
+									list-style-type: none;
+									display: block;
+									text-align: center;
+									padding: 15px 0;
+									background-color: @color-blue;
 									color: @color-offwhite;
-									font-family: @font-body;
-									font-size: .75rem;
+									a:link, a:visited {
+										color: @color-offwhite;
+										font-family: @font-body;
+										font-size: .75rem;
+									}
 								}
-								a:hover {
-									text-decoration: underline;
-									color: @color-red;
-									font-weight: 600;
+									li:hover {
+										text-decoration: underline;
+										background-color: @color-red;
+										font-weight: 600;
 								}
-							}
-							li:nth-child(2) {
-								text-align: center;
-								padding-right: 70px;
-							}
-							li:nth-child(3) {
-								text-align: center;
 							}
 						}
-					}
 					.flexheader {
 						.inner {
 							.flexit {
@@ -402,6 +416,7 @@ footer {
 									font-style: italic;
 								}
 							}
+
 							.headericons {
 	          		display: flex;
 	          		flex-flow: column nowrap;
@@ -428,9 +443,9 @@ footer {
 					}
 				}
 
-			.menu, .hamburger, .cross {
+.menu, .hamburger, .cross {
 				display: none;
-			}
+}
 
 .offwhite {
 	display: flex;
@@ -522,7 +537,6 @@ footer {
 	}
 }
 
-
 .footerlogo {
 	display: block;
 }
@@ -530,7 +544,6 @@ footer {
 /*-----------------------------------
 ...............THRIFT PAGE.................
 ----------------------------------- */
-
 
 .picright {
 	display: flex;
@@ -543,13 +556,9 @@ footer {
 		flex-grow: 3;
 	}
 }
-
 .picleft {
 	display: flex;
 	flex-flow: row-reverse nowrap;
 	align-items: flex-start;
 }
-
-
-
 }

@@ -97,7 +97,7 @@ header .flexheader .blackcolor {
   height: 300px;
   opacity: 0.8;
 }
-header .desktopnav {
+header .desktopmenu {
   display: none;
 }
 /*****this is controlling hamburger menu *****/
@@ -177,6 +177,12 @@ header .desktopnav {
 }
 /*hamburger menu ends */
 /*-----------------------------------
+...............DESKTOP DROPDOWN MENU.................
+----------------------------------- */
+.hide {
+  display: none !important;
+}
+/*-----------------------------------
 ...............BODY.................
 ----------------------------------- */
 body {
@@ -234,8 +240,11 @@ section {
   display: block;
   margin: 4% auto;
 }
-.offwhite .buttonblue:hover {
+.offwhite .buttonblue .buttonblue:hover {
   background-color: red;
+}
+.hide {
+  display: none;
 }
 .blue {
   background-color: #000654;
@@ -300,11 +309,6 @@ footer {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  /*.iconsfooter {
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: center;
-			align-items: flex-start; */
 }
 footer figure figcaption {
   font-family: 'Nunito', sans-serif;
@@ -312,8 +316,6 @@ footer figure figcaption {
 footer .iconflexfooter {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: ;
-  align-items: ;
   padding: 5px 0 5px 5px;
 }
 footer .iconflexfooter img {
@@ -397,38 +399,51 @@ footer .iconflexfooter img {
   margin: auto;
 }
 @media (min-width: 990px) {
-  header .desktopnav {
-    display: inline;
+  header {
+    /*-----------------------------------
+...............DROPDOWN MENU.................
+-----------------------------------*/
   }
-  header .desktopnav ul {
+  header .desktopmenu {
+    border-bottom: 3px solid #d42729;
+    background-color: #000654;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+  }
+  header .desktopmenu .menu-open {
+    position: relative;
+  }
+  header .desktopmenu button {
+    display: inline;
     background-color: #000654;
-    border-bottom: 3px solid #d42729;
+    padding: 15px;
+    color: #fefdf7;
+    width: 160px;
   }
-  header .desktopnav ul li {
+  header .desktopmenu ul {
+    position: absolute;
+    z-index: 1;
+  }
+  header .desktopmenu ul li {
+    width: 160px;
     list-style-type: none;
-    padding: 1% 5% 2% 5%;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #000654;
+    color: #fefdf7;
   }
-  header .desktopnav ul li a:link,
-  header .desktopnav ul li a:visited {
+  header .desktopmenu ul li a:link,
+  header .desktopmenu ul li a:visited {
     color: #fefdf7;
     font-family: 'Nunito', sans-serif;
     font-size: .75rem;
   }
-  header .desktopnav ul li a:hover {
+  header .desktopmenu ul li:hover {
     text-decoration: underline;
-    color: #d42729;
+    background-color: #d42729;
     font-weight: 600;
-  }
-  header .desktopnav ul li:nth-child(2) {
-    text-align: center;
-    padding-right: 70px;
-  }
-  header .desktopnav ul li:nth-child(3) {
-    text-align: center;
   }
   header .flexheader .inner .flexit {
     width: 100%;
