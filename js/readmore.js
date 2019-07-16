@@ -23,25 +23,3 @@ function hideMore () {
 
 blueButton.addEventListener('click', revealMore);
 showLess.addEventListener('click', hideMore);
-
-
-
-/*
-
-function readMore {
-  event.preventDefault();
-
-}
-mlink.addEventListener("click",
-  function(event) {
-    event.preventDefault();
-    mdiv.style.display = (mdiv.style.display ==="none") ? "block" : "none";
-  }, false
-);
-mdiv.style.display ="none";
-
-function changeText() {
-  document.getElementById("textchange").innerHTML = "Enter if you dare";
-} */
-
-//EVENT LISTENER

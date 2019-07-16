@@ -1,6 +1,9 @@
+//variables
+
 var openMenu = document.getElementsByClassName('need-help-open');
 var desktopMenu3 = document.getElementsByClassName('dropdownhelpmenu')
 
+//functions
 
  function dropDown () {
   for(i = 0; i < openMenu.length; i++) {
@@ -14,10 +17,8 @@ function hideDrop () {
  }
 }
 
-//firstOne.addEventListener('mouseenter', dropDown);
-//firstOne.addEventListener('mouseleave', hideDrop);
 
-
+//event listeners
 
 for(i = 0; i < openMenu.length; i++) {
   openMenu[i].addEventListener('mouseenter', dropDown);
